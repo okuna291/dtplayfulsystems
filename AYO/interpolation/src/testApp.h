@@ -19,9 +19,8 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     float size;
-    float cX;
-    float cY;
-    float cC;
-    void ofPoint p1(cX, cY, cC);
-    void ofPoint p2(cX, cY, cC);
+//    float cX;
+//    float cY;
+//    float cC;
+     ofPoint p1(float sX, float sY, float eX, float eY);
 };
