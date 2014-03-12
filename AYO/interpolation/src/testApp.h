@@ -3,24 +3,22 @@
 #include "ofMain.h"
 
 class testApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
-    float size;
-//    float cX;
-//    float cY;
-//    float cC;
-     ofPoint p1(float sX, float sY, float eX, float eY);
+    
+public:
+    void setup();
+    void update();
+    void draw();
+    
+    void keyPressed(int key);
+    void keyReleased(int key);
+    void mouseMoved(int x, int y );
+    void mouseDragged(int x, int y, int button);
+    void mousePressed(int x, int y, int button);
+    void mouseReleased(int x, int y, int button);
+    void windowResized(int w, int h);
+    void dragEvent(ofDragInfo dragInfo);
+    void gotMessage(ofMessage msg);
+    ofPoint pointOnLine(float t, ofPoint p1, ofPoint p2);
+    float from1X,from1Y,to1X,to1Y;
+    ofPoint from, to, circleCenter, from1, to1;
 };
