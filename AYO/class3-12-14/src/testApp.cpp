@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+    circleCenter.set(ofGetWidth()/2, ofGetHeight()/2);
+destination.set(ofGetWidth()-50, ofGetHeight()/2);
     
 }
 
@@ -15,7 +16,8 @@ void testApp::update(){
 //--------------------------------------------------------------
 
 void testApp::draw(){
-    
+    ofCircle(circleCenter,10);
+    ofCircle(destination,10);
     
     
 }
